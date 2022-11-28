@@ -20,4 +20,59 @@
  * and
  * concat
  */
+function isFalse(input){
+    return input === false;
+}
 
+function concat(input1, input2){
+    return input1.toString()+input2.toString();
+}
+console.log(concat(true,true));
+
+
+function isTrue(input){
+    return input === true;
+}
+
+function isEven(input){
+    if(input % 2 == 0){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function isEqual(input1, input2){
+    if(input1 == input2){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function not(input){
+    return !input;
+}
+
+function and(input1,input2){
+    return (input1 && input2)}
+
+console.log(and('true', 'false'));
+
+function addOne(input) {
+    if (isNaN(input)) {
+        return input;
+    } else {
+        return parseFloat(input) + 1;
+    }
+}
+
+console.log(addOne('Infinity'));
+
+function isIdentical(input1, input2){
+    return input1 === input2;
+}
+
+function or(input1,input2){
+    return input1||input2;
+}
