@@ -35,6 +35,9 @@ function isTrue(input){
 }
 
 function isEven(input){
+    if(typeof input === 'boolean'){
+        return false;
+    }
     if(input % 2 == 0){
         return true;
     }else {
